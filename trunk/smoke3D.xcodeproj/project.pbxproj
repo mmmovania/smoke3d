@@ -1,0 +1,248 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C106895913028DE4007B611D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C106895813028DE4007B611D /* main.cpp */; };
+		C106895B13028E00007B611D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C106895A13028E00007B611D /* OpenGL.framework */; };
+		C106897113028E07007B611D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C106897013028E07007B611D /* GLUT.framework */; };
+		C10689A11302984D007B611D /* smoke3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C10689A01302984D007B611D /* smoke3D.cpp */; };
+		C1068AE01302B80E007B611D /* solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068ADF1302B80E007B611D /* solver.cpp */; };
+		C1068AE91302B8DF007B611D /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068AE81302B8DF007B611D /* utility.cpp */; };
+		C1068BCC1302C37C007B611D /* advect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068BCB1302C37C007B611D /* advect.cpp */; };
+		C1068CED1302D895007B611D /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068CEC1302D895007B611D /* render.cpp */; };
+		C1068D731302E25E007B611D /* write_bmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068D711302E25E007B611D /* write_bmp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8DD76FB20486AB0100D96B5E /* smoke3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = smoke3D; sourceTree = BUILT_PRODUCTS_DIR; };
+		C106895813028DE4007B611D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		C106895A13028E00007B611D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C106897013028E07007B611D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C106899F1302984D007B611D /* smoke3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smoke3D.h; path = src/smoke3D.h; sourceTree = "<group>"; };
+		C10689A01302984D007B611D /* smoke3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = smoke3D.cpp; path = src/smoke3D.cpp; sourceTree = "<group>"; };
+		C1068ADE1302B80E007B611D /* solver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solver.h; path = src/solver.h; sourceTree = "<group>"; };
+		C1068ADF1302B80E007B611D /* solver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = solver.cpp; path = src/solver.cpp; sourceTree = "<group>"; };
+		C1068AE71302B8DF007B611D /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = src/utility.h; sourceTree = "<group>"; };
+		C1068AE81302B8DF007B611D /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utility.cpp; path = src/utility.cpp; sourceTree = "<group>"; };
+		C1068BCA1302C37C007B611D /* advect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = advect.h; path = src/advect.h; sourceTree = "<group>"; };
+		C1068BCB1302C37C007B611D /* advect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = advect.cpp; path = src/advect.cpp; sourceTree = "<group>"; };
+		C1068BD11302C405007B611D /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = src/types.h; sourceTree = "<group>"; };
+		C1068CEB1302D895007B611D /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = render.h; path = src/render.h; sourceTree = "<group>"; };
+		C1068CEC1302D895007B611D /* render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = render.cpp; path = src/render.cpp; sourceTree = "<group>"; };
+		C1068D711302E25E007B611D /* write_bmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = write_bmp.cpp; path = src/write_bmp.cpp; sourceTree = "<group>"; };
+		C1068D721302E25E007B611D /* write_bmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = write_bmp.h; path = src/write_bmp.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106895B13028E00007B611D /* OpenGL.framework in Frameworks */,
+				C106897113028E07007B611D /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* smoke3D */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				C106895A13028E00007B611D /* OpenGL.framework */,
+				C106897013028E07007B611D /* GLUT.framework */,
+			);
+			name = smoke3D;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C106895813028DE4007B611D /* main.cpp */,
+				C1068BD11302C405007B611D /* types.h */,
+				C106899F1302984D007B611D /* smoke3D.h */,
+				C10689A01302984D007B611D /* smoke3D.cpp */,
+				C1068ADE1302B80E007B611D /* solver.h */,
+				C1068ADF1302B80E007B611D /* solver.cpp */,
+				C1068BCA1302C37C007B611D /* advect.h */,
+				C1068BCB1302C37C007B611D /* advect.cpp */,
+				C1068CEB1302D895007B611D /* render.h */,
+				C1068CEC1302D895007B611D /* render.cpp */,
+				C1068D721302E25E007B611D /* write_bmp.h */,
+				C1068D711302E25E007B611D /* write_bmp.cpp */,
+				C1068AE71302B8DF007B611D /* utility.h */,
+				C1068AE81302B8DF007B611D /* utility.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* smoke3D */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* smoke3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "smoke3D" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smoke3D;
+			productInstallPath = "$(HOME)/bin";
+			productName = smoke3D;
+			productReference = 8DD76FB20486AB0100D96B5E /* smoke3D */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "smoke3D" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* smoke3D */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* smoke3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106895913028DE4007B611D /* main.cpp in Sources */,
+				C10689A11302984D007B611D /* smoke3D.cpp in Sources */,
+				C1068AE01302B80E007B611D /* solver.cpp in Sources */,
+				C1068AE91302B8DF007B611D /* utility.cpp in Sources */,
+				C1068BCC1302C37C007B611D /* advect.cpp in Sources */,
+				C1068CED1302D895007B611D /* render.cpp in Sources */,
+				C1068D731302E25E007B611D /* write_bmp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_OPENMP_SUPPORT = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = smoke3D;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_OPENMP_SUPPORT = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = smoke3D;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "smoke3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "smoke3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
