@@ -44,6 +44,7 @@ void smoke3D::init() {
 		u[2][i][j][k] = 0.0;
 	} END_FOR
 	
+	// Mark Wall Inside A Sphere
 	int w = SPHERE_R*N;
 	for( int i=-w; i<=w; i++ ) {
 		for( int j=-w; j<=w; j++ ) {
@@ -70,6 +71,7 @@ static void enforce_boundary() {
 		if( k==0 || k==N ) u[2][i][j][k] = 0.0;
 	} END_FOR
 	
+	// Set Initial Smoke
 	if( frame < 50 ) {
 		int w = N/7;
 		for( int i=-w; i<=w; i++ ) {
@@ -84,6 +86,7 @@ static void enforce_boundary() {
 		}
 	}
 	
+	// Set Boundary Flow Around Sphere Zero
 	FOR_EVERY_CELL {
 		if( b[i][j][k] ) {
 			c[i][j][k] = 0.0;
@@ -93,6 +96,7 @@ static void enforce_boundary() {
 		}
 	} END_FOR
 	
+	// Give Some External Force
 	FOR_EVERY_CELL {
 		u[1][i][j][k] += 0.1*c[i][j][k];
 	} END_FOR
@@ -125,6 +129,7 @@ static void project() {
 }
 
 static void advection() {
+	// Advect
 	advect::advect( u, c, N, DT );
 }
 
