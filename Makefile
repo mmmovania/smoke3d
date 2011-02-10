@@ -36,7 +36,7 @@ $(BINDIR)/$(NAME) : $(SRC:.cpp=.o)
 	@echo "Linking $@..."
 
 run: all
-	$(BINDIR)/$(NAME)
+	cd $(BINDIR); 	./$(NAME)
 
 depend : $(SRC:.cpp=.d)
 %.d : %.cpp

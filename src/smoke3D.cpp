@@ -138,6 +138,7 @@ void smoke3D::simulateStep() {
 	project();
 	advection();
 	render::render(c,SPHERE_R,N,frame);
+	printf( "wrote frame %d\n", frame );
 	frame ++;
 	if( frame > LIMIT ) exit(0);
 }
