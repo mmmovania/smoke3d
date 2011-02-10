@@ -50,6 +50,7 @@ depend : $(SRC:.cpp=.d)
 clean:
 	rm -rf $(shell find . -name "*.o" -o -name "*.d")
 	rm -rf $(BINDIR)/$(NAME)
+	rm -rf $(BINDIR)/*.bmp
 	rm -rf GPATH GRTAGS GSYMS GTAGS HTML
 
 ifeq ($(DEP), 1)
