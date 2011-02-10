@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C106895913028DE4007B611D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C106895813028DE4007B611D /* main.cpp */; };
-		C106895B13028E00007B611D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C106895A13028E00007B611D /* OpenGL.framework */; };
-		C106897113028E07007B611D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C106897013028E07007B611D /* GLUT.framework */; };
 		C10689A11302984D007B611D /* smoke3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C10689A01302984D007B611D /* smoke3D.cpp */; };
 		C1068AE01302B80E007B611D /* solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068ADF1302B80E007B611D /* solver.cpp */; };
 		C1068AE91302B8DF007B611D /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1068AE81302B8DF007B611D /* utility.cpp */; };
@@ -33,8 +31,6 @@
 /* Begin PBXFileReference section */
 		8DD76FB20486AB0100D96B5E /* smoke3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = smoke3D; sourceTree = BUILT_PRODUCTS_DIR; };
 		C106895813028DE4007B611D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
-		C106895A13028E00007B611D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		C106897013028E07007B611D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		C106899F1302984D007B611D /* smoke3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smoke3D.h; path = src/smoke3D.h; sourceTree = "<group>"; };
 		C10689A01302984D007B611D /* smoke3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = smoke3D.cpp; path = src/smoke3D.cpp; sourceTree = "<group>"; };
 		C1068ADE1302B80E007B611D /* solver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solver.h; path = src/solver.h; sourceTree = "<group>"; };
@@ -55,8 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C106895B13028E00007B611D /* OpenGL.framework in Frameworks */,
-				C106897113028E07007B611D /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +62,6 @@
 			children = (
 				08FB7795FE84155DC02AAC07 /* Source */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
-				C106895A13028E00007B611D /* OpenGL.framework */,
-				C106897013028E07007B611D /* GLUT.framework */,
 			);
 			name = smoke3D;
 			sourceTree = "<group>";
