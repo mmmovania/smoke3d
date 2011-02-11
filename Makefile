@@ -19,11 +19,11 @@ ARCH := $(shell uname)
 SUM	= $(shell find . -name "*.h" -print0 -o -name "*.cpp" -print0 | xargs -0 wc -l | grep total )
 
 ifeq ($(ARCH),Darwin)
-	LIB := -framework OpenGL -framework GLUT -fopenmp
+	LIB := -fopenmp
 endif
 
 ifeq ($(ARCH),Linux)
-	LIB := -lglut -lGLEW -fopenmp
+	LIB := -fopenmp
 endif
 
 all:
