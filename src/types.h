@@ -7,6 +7,6 @@
 #ifndef TYPES_H
 #define TYPES_H
 
-#define FLOAT	double
+#define FLOAT	float
 
 #endif

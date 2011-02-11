@@ -131,10 +131,10 @@ void render::render( FLOAT ***d, FLOAT sphere_r, int N, int frame ) {
 					FLOAT lpos[3] = { pos[0]+lstride*m*lightVec[0], pos[1]+lstride*m*lightVec[1], pos[2]+lstride*m*lightVec[2] };
 					
 					// Sphere Hit Test
-					//if( hypot(lpos[0]-0.5,hypot(lpos[1]-0.5,lpos[2]-0.5)) < sphere_r ) {
-					//	Tl *= 1.0-exp(-3.0*lstride*m);
-					//	break;
-					//}
+					if( hypot(lpos[0]-0.5,hypot(lpos[1]-0.5,lpos[2]-0.5)) < sphere_r ) {
+						Tl *= 1.0-exp(-3.0*lstride*m);
+						break;
+					}
 					
 					// Sample Density
 					FLOAT ldensity = sample3D(d, N, lpos);

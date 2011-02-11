@@ -5,6 +5,7 @@
  */
 
 #include "types.h"
+#include "utility.h"
 #include "smoke3D.h"
 #include "utility.h"
 #include "solver.h"
@@ -55,6 +56,10 @@ void smoke3D::init() {
 			}
 		}
 	}
+
+#if _OPENMP
+	printf( "OpenMP Detected.\n" );
+#endif
 }
 
 static void enforce_boundary() {
@@ -72,7 +77,7 @@ static void enforce_boundary() {
 	} END_FOR
 	
 	// Set Initial Smoke
-	if( frame < 50 ) {
+	if( frame < LIMIT/2 ) {
 		int w = N/7;
 		for( int i=-w; i<=w; i++ ) {
 			for( int j=-w; j<=w; j++ ) {
