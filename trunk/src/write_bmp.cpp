@@ -9,7 +9,7 @@
 
 struct header
 {
-	char bfType[2];
+	char bfType[3];
 	int bfSize;
 	int bfReserved;
 	int bfOffBits;

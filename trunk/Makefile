@@ -1,7 +1,7 @@
 CXX := g++
 RELEASE := 1
 
-OPT := -Wall
+OPT := -Wall -fopenmp
 ifeq ($(RELEASE),1)
 OPT += -O3
 else

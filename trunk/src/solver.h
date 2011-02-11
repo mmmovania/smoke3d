@@ -7,5 +7,5 @@
 #include "types.h"
 
 namespace solver {
-	double solve( FLOAT ***x, FLOAT ***b, FLOAT ***w, int n );
+	FLOAT solve( FLOAT ***x, FLOAT ***b, FLOAT ***w, int n );
 }
